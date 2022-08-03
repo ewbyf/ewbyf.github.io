@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Eric Wong</title>
+    <link rel="stylesheet" href="../src/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar fade-in">
+                <div class="leftNavbar text-hover">
+                    <img src="../img/name-logo.png"> 
+                    <a href="#tsparticles">Eric Wong</a>
+                </div>
+                <div class="rightNavbar text-hover">
+                    <ul>
+                        <li><div><a href="#about-me">ABOUT ME</a></div></li>
+                        <li><a href="#projects">PROJECTS</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+                <div class="nav-button">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+            </div>
+        </nav>
+    </header>    
+    <main>
+        <article>
+            <div id="tsparticles">
+                <div class="home fade-in">
+                    <img src="../img/name-logo.png"> 
+                    <p class="home-name">Eric Wong</p>
+                    <p class="home-subtext">Student + Developer</p>
+                    <div class="logos">
+                        <a href="https://github.com/ewbyf">
+                            <img src="img/github-logo.png" alt="github logo">
+                        </a>
+                        <a href="https://www.linkedin.com/in/ewbyf/">
+                            <img src="img/linkedin-logo.png" alt="linkedin logo">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
+        
+        <article>
+            <div class="title-flex">
+                <div class="title-border" id="about-me">
+                    <p class="title">ABOUT ME</p>
+                </div>
+            </div>
+
+            <div class="about-me">
+                <div class="about-me-default">
+                    <p><span>Hey, I'm Eric!</span><br>★ Sophomore CS major at Missouri S&T<br>★ I can fluently speak English and Cantonese (and 50% Mandarin)<br>★ I love CS because I get to apply everything I learn and see the results unfold<br>★ Skills: HTML, CSS, JS, Python, C++, SQL<br>★ Available for full-time summer internships!</p>
+                </div>
+                <div class="about-me-default" id="about-me-img">
+                    <img src="../img/code.gif">
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="title-flex">
+                <div class="title-border" id="projects">
+                    <p class="title">PROJECTS</p>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="project-default" onclick="location.href='https:\/\/github.com\/ewbyf\/HOLI'" style="margin-bottom: 0;">
+                    <div class="project-title">
+                        <img src="img/higherlower.png" alt="higher-lower-logo">
+                        <p>Higher or Lower: Instagram</p>
+                    </div>
+                    <div class="project-body">
+                        <p>Recreation of <a href="http://www.higherlowergame.com/">The Higher or Lower Game</a> but with Instagram followers instead of Google searches. </p>
+                    </div>
+                    <div class="project-skills">
+                        <img src="img/html.png" alt="html-icon" title="HTML">
+                        <img src="img/css.png" alt="css-icon" title="CSS">
+                        <img src="img/js.png" alt="sql-icon" title="JS">
+                    </div>
+                </div>
+                <div class="project-default" onclick="location.href='www.google.com'">
+                    <div class="project-title">
+                        <p>Coming Soon</p>
+                    </div>
+                    <div class="project-body">
+                    </div>
+                    <div class="project-skills">
+                    </div>
+                </div>
+            </div>
+        </article> 
+    </main>
+
+    <footer id="contact">
+        <div class="footer-flex">
+            <div class="contact footer-default">
+                <p class="footer-title">CONTACT</p>
+                <div class="contact-info">
+                    <p>Email ➤ ewbyf@umsystem.edu</p>
+                    <p>Discord ➤ Cooly#7676</p>
+                </div>
+            </div>
+            <div class="footer-mid footer-default">
+                <p class="footer-title">CONNECT</p>
+                <div class="logos">
+                    <a href="https://github.com/ewbyf">
+                        <img src="img/github-logo-invert.png" alt="github logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/ewbyf/">
+                        <img src="img/linkedin-logo-invert.png" alt="linkedin logo">
+                    </a>
+                </div>
+                <p>© 2022 Eric Wong</p>
+            </div>
+            <div class="footer-nav footer-default text-hover">
+                <p class="footer-title">EXPLORE</p>
+                <a href="#tsparticles">HOME</a>
+                <a href="#about-me">ABOUT ME</a>
+                <a href="#projects">PROJECTS</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="src/resize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles-slim@2.0.6/tsparticles.slim.bundle.min.js"></script>
+    <script src="src/background.js"></script>
+    <script src="src/onscroll.js"></script>
+    <script src="src/navbar.js"></script>
+</body>
+</html>
