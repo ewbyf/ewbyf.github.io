@@ -278,7 +278,7 @@ body {
 }
 
 .name-svg.visible {
-    animation: 5s fillSvg ease-in;
+    animation: 3s fillSvg ease-in;
     stroke: white;
 }
 
