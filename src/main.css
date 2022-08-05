@@ -19,11 +19,6 @@ body {
     overflow-y: scroll;
 }
 
-.stop-resize-anim * {
-    animation: none !important;
-    transition: none !important;
-}
-
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -236,10 +231,10 @@ body {
     }
     to {
         border-right-color: transparent;
-    }
+    } 
 }
 
-.title-animation {
+.title.visible {
     color: white;
     animation: typewriter 1s steps(10) .75s 1 normal both,
     blinkTextCursor 500ms steps(40) infinite normal;
@@ -267,23 +262,64 @@ body {
     z-index: 1;
 }
 
-.about-me-default p {
-    padding: 35px 0px;
-    font-size: 25px;
+.about-me-text {
     min-width: 300px;
-    width: 30vw;
-    text-align: left;
-    color: transparent;
+    width: 35vw;
     background-color: black;
-    line-height: 42.5px;
 }
 
-.about-me-default p span {
-    font-size: 40px;
-    color: inherit;
-    display: block;
+.name-svg {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 350px;
+    stroke-dasharray: 4002;
+    stroke-width: 15px;
+}
+
+.name-svg.visible {
+    animation: 5s fillSvg ease-in;
+    stroke: white;
+}
+
+@keyframes fillSvg {
+    0% {
+        stroke-dashoffset: 4002;
+    }
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+.about-me-text p.visible {
+    color: white;
+}
+
+.about-me-text ul {
+    padding: 0;
+}
+
+.about-me-text li {
+    padding: 15px 0px;
+    font-size: 25px;
     text-align: center;
-    line-height: 30px;
+    list-style: none;
+    opacity: 0;
+}
+
+@keyframes text-anim {
+    0% {
+        opacity: 0;
+        transform: translate(-50%);
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.about-me-text ul .visible {
+    animation: text-anim 2s ease;
+    opacity: 1;
 }
 
 .about-me-default img {
@@ -293,46 +329,7 @@ body {
     opacity: 0;
 }
 
-@keyframes text-open {
-    0% {
-        padding: 0;
-        width: 30vw;
-        min-width: 300px;
-        font-size: 0;
-        line-height: 0px;
-        color: transparent;
-    }
-    50% {
-        font-size: 25px;
-        padding: 35px 0px;
-        line-height: 42.5px;
-        color: transparent;
-    }
-}
-
-@keyframes text-open-span {
-    0% {
-        font-size: 0;
-        line-height: 0px;
-    }
-    50% {
-        font-size: 40px;
-        line-height: 30px;
-    }
-}
-
-#about-me-animation {
-    border-top: 5px solid white;
-    border-bottom: 5px solid white;
-    animation: text-open 1.5s ease;
-    color: white;
-}
-
-#about-me-animation-span {
-    animation: text-open-span 1.5s ease;
-}
-
-#image-animation {
+#about-me-img .visible {
     animation: fadeIn 3.25s ease;
     opacity: 1;
 }
@@ -344,7 +341,6 @@ body {
     justify-content: center;
     background-size: cover;
     min-height: 500px;
-    opacity: 0;
 }
 
 .project-default {
@@ -361,6 +357,7 @@ body {
     border: 3px solid white;
     box-sizing: border-box;
     cursor: pointer;
+    opacity: 0;
 }
 
 .project-default:hover {
@@ -368,9 +365,19 @@ body {
     top: -10px;
 }
 
-#project-animation {
-    animation: fadeIn 3s ease;
+.projects .visible {
+    animation: projectAnim 2s ease;
     opacity: 1;
+}
+
+@keyframes projectAnim {
+    0% {
+        opacity: 0;
+        transform: translate(0, +10%);
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .project-default p {
@@ -599,5 +606,8 @@ footer ul a {
     .title-border {
         height: 150px;
         min-width: 325px; 
+    }
+    .about-me-text li {
+        font-size: 22.5px;
     }
 }
