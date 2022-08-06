@@ -346,6 +346,7 @@ body {
 .project-default {
     display: flex;
     flex: 1 1 auto;
+    align-items: center;
     flex-direction: column;
     position: relative;
     margin: 125px 50px;
@@ -384,6 +385,10 @@ body {
     color: white;
 }
 
+.project-title {
+    width: 100%;
+}
+
 .project-title img {
     position: relative;
     left: 50%;
@@ -396,7 +401,7 @@ body {
     position: relative;
     font-size: 23px;
     margin: 0;
-    text-align: left;
+    text-align: center;
     padding-bottom: 7.5px;
     border-bottom: 3px solid white;
 }
@@ -406,14 +411,39 @@ body {
     text-align: left;
 }
 
-.project-body a {
+.higherlower {
     color: red;
     text-decoration: none;
 }
 
-.project-body a:hover {
+.higherlower:hover {
     text-decoration: underline;
 }
+
+.project-default button {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    text-decoration: none;
+    border: 3px solid white;
+    border-radius: 10px;
+    max-width: 200px;
+}
+
+.project-default button a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 18px;
+}
+
+.project-default button:hover {
+    background-color: white;
+}
+
+.project-default button:hover a {
+    color: black
+}
+
 
 .project-skills {
     display: flex;
