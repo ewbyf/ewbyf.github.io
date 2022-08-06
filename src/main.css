@@ -421,19 +421,23 @@ body {
 }
 
 .project-default button {
-    display: flex;
-    justify-content: center;
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%);
+    max-width: 200px;
+    margin-bottom: 10px;
+    padding: 10px;
     background-color: black;
     text-decoration: none;
     border: 3px solid white;
     border-radius: 10px;
-    max-width: 200px;
 }
 
 .project-default button a {
-    text-decoration: none;
-    padding: 10px;
     font-size: 18px;
+    white-space: nowrap;
+    text-decoration: none;
 }
 
 .project-default button:hover {
@@ -443,7 +447,6 @@ body {
 .project-default button:hover a {
     color: black
 }
-
 
 .project-skills {
     display: flex;
@@ -459,7 +462,7 @@ body {
     height: 35px;
     position: relative;
     display: flex;
-    margin-left: 7.5px;
+    margin: 3.75px;
 }
 
 footer {
@@ -639,5 +642,37 @@ footer ul a {
     }
     .about-me-text li {
         font-size: 22.5px;
+    }
+}
+
+@media (max-width: 429px) {
+    .project-title img {
+        height: 85px;
+    }
+    
+    .project-title p {
+        font-size: 22px;
+    }
+    
+    .project-body p {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 356px) {
+    .project-title img {
+        height: 80px;
+    }
+    
+    .project-title p {
+        font-size: 20px;
+    }
+    
+    .project-body p {
+        font-size: 16.5px;
+    }
+
+    .project-default button a {
+        font-size: 16.5px;
     }
 }
