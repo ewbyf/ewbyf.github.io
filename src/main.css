@@ -588,6 +588,7 @@ footer ul a {
         margin-top: 35px;
         box-sizing: border-box;
         background: rgba(0, 0, 0, .7);
+        -webkit-backdrop-filter: blur(1rem);
         backdrop-filter: blur(1rem);
         transform: translateX(100%);
         transition: transform 0.325s ease-in;
