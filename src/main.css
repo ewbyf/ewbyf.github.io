@@ -48,7 +48,7 @@ body {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 2;
+    z-index: 3;
     background: transparent;
 }
 
@@ -432,12 +432,14 @@ body {
     text-decoration: none;
     border: 3px solid white;
     border-radius: 10px;
+    z-index: 2;
 }
 
 .project-default button a {
     font-size: 18px;
     white-space: nowrap;
     text-decoration: none;
+    z-index: 2;
 }
 
 .project-default button:hover {
