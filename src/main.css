@@ -412,11 +412,20 @@ body {
 }
 
 .higherlower {
-    color: red;
+    color: rgb(255, 96, 96);
     text-decoration: none;
 }
 
 .higherlower:hover {
+    text-decoration: underline;
+}
+
+.pong {
+    color: rgb(255, 24, 255);
+    text-decoration: none;
+}
+
+.pong:hover {
     text-decoration: underline;
 }
 
