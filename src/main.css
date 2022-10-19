@@ -3,6 +3,17 @@
     src: url("../fonts/helvetica-rounded-bold-5871d05ead8de.otf");
 }
 
+::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+    height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: white;
+    border-radius: 10px;
+}
+
 * {
     font-family: "Helvetica";
     color: white;
@@ -16,7 +27,7 @@ body {
     margin: 0;
     background-color: white;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: overlay;
 }
 
 @keyframes fadeIn {
