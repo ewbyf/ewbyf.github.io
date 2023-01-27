@@ -52,6 +52,50 @@ body {
     min-height: 550px;
 }
 
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    text-align: center; 
+    padding: 5px 0;
+    border-radius: 6px;
+    width: 110px;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -55px;
+    position: absolute;
+    z-index: 9999;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+}
+  
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -478,6 +522,7 @@ body {
     left: 50%;
     transform: translate(-50%);
     bottom: 16px;
+    z-index: 99;
 }
 
 .project-skills img {
