@@ -377,14 +377,6 @@ body {
     opacity: 1;
 }
 
-.about-me-default img {
-    max-width: 400px;
-    min-width: 250px;
-    width: 30vw;
-    opacity: 0;
-    border-radius: 10000px;
-}
-
 #about-me-img .visible {
     animation: fadeIn 3.25s ease;
     opacity: 1;
@@ -470,7 +462,7 @@ body {
 }
 
 .higherlower {
-    color: rgb(255, 96, 96);
+    color: #ff6060;
     text-decoration: none;
 }
 
@@ -746,4 +738,12 @@ footer ul a {
     .project-default button a {
         font-size: 16.5px;
     }
+}
+
+.pic {
+    max-width: 500px;
+    min-width: 250px;
+    width: 30vw;
+    opacity: 0;
+    border-radius: 10000px;
 }
