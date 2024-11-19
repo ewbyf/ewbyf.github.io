@@ -392,24 +392,20 @@ body {
 
 .project-default {
 	display: flex;
-	/* flex: 1 1 auto; */
 	align-items: center;
 	flex-direction: column;
 	position: relative;
-	/* margin: 125px 50px; */
 	padding: 16px;
 
-	/* height: 450px;
+	height: 450px;
 	max-height: 450px;
 	width: 350px;
-	max-width: 350px; */
+	max-width: 350px;
 
 	background-color: black;
 	border: 3px solid white;
 	box-sizing: border-box;
 	cursor: pointer;
-	/* opacity: 0; */
-	/* top: 0; */
 	transition: all 0.3s ease-in-out;
 }
 
@@ -461,6 +457,27 @@ body {
 .project-body p {
 	font-size: 20px;
 	text-align: left;
+}
+
+.project-awards {
+    background-color: #fabc1e;
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+	left: 50%;
+    width: 85%;
+	transform: translate(-50%);
+	bottom: 75px;
+}
+
+.project-awards p {
+    color: #1d1d1d;
+    margin: 0
 }
 
 .higherlower {
@@ -771,13 +788,6 @@ footer ul a {
 .swiper-button-next:hover,
 .swiper-button-prev:hover {
 	background-color: rgba(255, 255, 255, .5);
-}
-
-.swiper-slide {
-	height: 450px;
-	max-height: 450px;
-	width: 350px;
-	max-width: 350px;
 }
 
 @media (max-width: 500px) {
